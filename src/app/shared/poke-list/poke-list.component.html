@@ -1,1 +1,17 @@
-<p>poke-list works!</p>
+<ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+    <a class="pokemon">
+        <div class="contenido__pokemon">
+            <div class="pokemon__image">
+                <img src="../../../assets/img/imagebulbasaur.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon__status">
+                <p>
+                    {{pokemon.status.id}}
+                </p>
+                <h2>
+                    {{ pokemon.name }}
+                </h2>
+            </div>
+        </div>
+    </a>
+</ng-template>
