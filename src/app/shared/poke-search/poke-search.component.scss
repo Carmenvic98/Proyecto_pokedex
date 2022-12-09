@@ -29,5 +29,22 @@
             margin-left: 10px;
             height: 25px;
         }
+
+        @media screen and (max-width: 320px){
+
+            form{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 10px;
+                align-items: center;
+                padding: 15px 20px;
+                background-color: EFECEC
+
+                input {
+                    padding: 5px 15px;
+                }
+            }
+        }
+
     }
 }
